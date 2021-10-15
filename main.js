@@ -1,4 +1,4 @@
-//import { createCalculatePage } from "./lib/calculatePage.js";
+import { createCalculatePage } from "./lib/calculatePage.js";
 import { createPageTitle } from "./lib/titleComponent.js";
 import { createPageImg } from "./lib/titleComponent.js";
 

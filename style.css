@@ -9,6 +9,17 @@
 :root {
   --font-family: "Bebas Neue", cursive;
   --color-background: #bee5b0;
+  --color-contrast: #fff;
+  --color-text: #000;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 
 #app {
@@ -25,4 +36,44 @@ body {
 }
 .main-img {
   width: 10%;
+}
+
+.number1 {
+  display: block;
+  border: 0;
+  border-radius: 0.8em;
+  text-align: center;
+}
+
+.number2 {
+  display: block;
+  border: 0;
+  border-radius: 0.8em;
+  text-align: center;
+}
+
+.plus-icon {
+  display: block;
+  width: 5%;
+}
+
+.form {
+  display: grid;
+  justify-items: center;
+  gap: 0.8em;
+}
+
+.submitButton {
+  border-radius: 0.8em;
+  background-color: var(--color-contrast);
+  color: var(--color-text);
+  border: 0;
+  padding: 1.2em;
+  margin: 0.5em;
+  font-family: var(--font-family);
+}
+
+.submitButton:hover {
+  background-color: var(--color-text);
+  color: var(--color-contrast);
 }
