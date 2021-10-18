@@ -1,4 +1,5 @@
-//import { createCalculatePage } from "./lib/calculatePage.js";
+import { createCalculatePage } from "./lib/calculatePage.js";
+import { createElement } from "./lib/elements.js";
 import { createPageTitle } from "./lib/titleComponent.js";
 import { createPageImg } from "./lib/titleComponent.js";
 
@@ -12,7 +13,12 @@ function createApp() {
   appElement.append(pageTitle);
 
   const enterCalculatePage = createCalculatePage(function (total) {
-    alert(`Dein Ergebnis ist ${total}.`);
+    const totalValue = createElement("h3", {
+      className: "total",
+      textContent: `Das Ergebnis ist ${total}.`,
+    });
+    appElement.append(totalValue);
+    //alert(`Das Ergebnis ist ${total}.`);
   });
 
   appElement.append(enterCalculatePage);
