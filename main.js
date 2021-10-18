@@ -6,11 +6,10 @@ import { createPageImg } from "./lib/titleComponent.js";
 function createApp() {
   const appElement = document.querySelector("#app");
 
-  const pageTitle = createPageTitle();
   const pageImg = createPageImg();
+  const pageTitle = createPageTitle();
 
-  appElement.append(pageImg);
-  appElement.append(pageTitle);
+  appElement.append(pageImg, pageTitle);
 
   const enterCalculatePage = createCalculatePage(function (total) {
     const totalValue = createElement("h3", {

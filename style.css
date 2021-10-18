@@ -38,7 +38,7 @@ body {
   width: 10%;
 }
 
-.number1 {
+.number {
   display: block;
   border: 0;
   border-radius: 0.8em;
@@ -46,15 +46,7 @@ body {
   font-family: var(--font-family);
 }
 
-.number2 {
-  display: block;
-  border: 0;
-  border-radius: 0.8em;
-  text-align: center;
-  font-family: var(--font-family);
-}
-
-.plus-icon {
+.multiply-icon {
   display: block;
   width: 5%;
 }
